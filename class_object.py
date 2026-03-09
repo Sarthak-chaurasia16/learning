@@ -10,7 +10,7 @@ my_new_car = Car("Tata", "Safari")
 print(f"{my_new_car.model} By {my_new_car.brand}")
 """
 #2. Class Method and Self  
-class Car:
+"""class Car:
     def __init__(self ,brand , model):
         self.brand = brand
         self.model = model 
@@ -27,4 +27,6 @@ for my_new_car in my_car:
     print(my_new_car.full_name())
 exit
 print("Exit Successfully:)")
+"""
+
 
