@@ -1,6 +1,6 @@
 # 1. Basic Class and Object
-"""class Car:
-python mein __init__ ka syntax hai aur ye constructor hai and self lagana hai jisse khud ko refer kar sake (Telephone line ko connect karne ke liye)
+class Car:
+#python mein __init__ ka syntax hai aur ye constructor hai and self lagana hai jisse khud ko refer kar sake (Telephone line ko connect karne ke liye)
     def __init__(self ,brand , model):
         self.brand = brand
         self.model = model
@@ -8,9 +8,9 @@ my_car = Car("Toyota", "Corolla")
 print(f"{my_car.model} By {my_car.brand} ")
 my_new_car = Car("Tata", "Safari")
 print(f"{my_new_car.model} By {my_new_car.brand}")
-"""
+
 #2. Class Method and Self  
-"""class Car:
+class Car:
     def __init__(self ,brand , model):
         self.brand = brand
         self.model = model 
@@ -27,9 +27,9 @@ for my_new_car in my_car:
     print(my_new_car.full_name())
 exit
 print("Exit Successfully:)")
-"""
+
 #3. Inheritance 
-"""class Car:
+class Car:
     def __init__(self ,brand , model):
         self.brand = brand
         self.model = model 
@@ -49,7 +49,7 @@ class ElectricCar(Car):
 my_tesla = ElectricCar("Tesla", "Model S", "90KWh")
 print(my_tesla.full_name())
 exit
-print("Exit Successfully:)")"""
+print("Exit Successfully:)")
 #4. Encapsulation
 class Car:
     #Attribute ke aage do underscore lagane se private ho jata hai like brand ke aage lagae hai
@@ -73,4 +73,31 @@ print(my_tesla.get_brand())
 exit
 print("Exit Successfully:)")
 
+#5. Polymorphism (Dono mein fuel type method same hai )
+class Car:
+    def __init__(self ,brand , model):
+        self.__brand = brand
+        self.model = model 
+    def fuel_type(self):
+        return "Petrol And Deisel"
+    def get_brand(self):
+        return self.full_name() 
+    def full_name(self):
+        return f"{self.model} by {self.__brand}"
+
+class ElectricCar(Car):
+    def __init__(self,brand, model, battery_size):
+        super().__init__( brand , model)
+        self.battery_size = battery_size
+    def fuel_type(self):
+        return "Electric Charge"
+    
+Electric_1 = ElectricCar("Tesla", "Model S", "90KWh")
+car1 = Car("Tata", "Safari")
+car2 = Car("Bentley","Flying Spur")
+print(f"{Electric_1.get_brand()} working by using {Electric_1.fuel_type()}")
+print(f"{car1.get_brand()} working by using {car1.fuel_type()}")
+print(f"{car2.get_brand()} working by using {car2.fuel_type()}")
+exit
+print("Exit Successfully:)")
 
