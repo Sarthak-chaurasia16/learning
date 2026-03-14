@@ -1,4 +1,4 @@
-"""# 1. Basic Class and Object
+# 1. Basic Class and Object
 class Car:
 #python mein __init__ ka syntax hai aur ye constructor hai and self lagana hai jisse khud ko refer kar sake (Telephone line ko connect karne ke liye)
     def __init__(self ,brand , model):
@@ -99,5 +99,5 @@ print(f"{Electric_1.get_brand()} working by using {Electric_1.fuel_type()}")
 print(f"{car1.get_brand()} working by using {car1.fuel_type()}")
 print(f"{car2.get_brand()} working by using {car2.fuel_type()}")
 exit
-print("Exit Successfully:)")"""
+print("Exit Successfully:)")
 
