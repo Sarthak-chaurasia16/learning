@@ -1,4 +1,4 @@
-"""#Class Variables
+#Class Variables
 class Car:
     Total_car = 0
 
@@ -26,8 +26,8 @@ car2 = Car("Bentley","Flying Spur")
 #Class variable hai total car isliye direct access le skte hai class se
 print(Car.Total_car)
 print("Exit Successfully:)")
-"""
-"""
+
+
 #Static Method
 #Add a static method to the car class that returns a general description of a car
 class Car:
@@ -41,7 +41,8 @@ class Car:
     def full_name(self):
         return f"{self.model} by {self.__brand}"
     @staticmethod
-    def general_descript means of transport"
+    def general_description():
+        return "Car is a means of transport"
 
 class ElectricCar(Car):
     def __init__(self,brand, model, battery_size):
@@ -55,9 +56,9 @@ my_car1 = Car("Tata", "Safari")
 #print(my_car1.general_description())
 print(Car.general_description())
 exit
-print("Exit Successfully:)") """
+print("Exit Successfully:)")
 
-"""#Property Decorators
+#Property Decorators
 # Question mein bola hai property ko read only mein convert karo
 #Abhi tak ho ye raha hai ki koi bhi property ko hum abhi overwrite kar skte hai like my_car1.model = "City"
 # krenge toh ye overwrite ho kar safari ke jagah city likh dega isliye hume convert krna padega  
@@ -91,9 +92,9 @@ my_car = Car("Tata", "Safari")
 #car2 = Car("Bentley","Flying Spur")
 # Hamare decorator ne use ek property ki tarah access krne ke liye de dia hai isliye parenthesis nhi lagana padega
 print(my_car.model)
-print("Exit Successfully:)")"""
+print("Exit Successfully:)")
 # Class inheritance and isinstance() function
-"""class Car:
+class Car:
     Total_car = 0
 
     def __init__(self ,brand , model):
@@ -121,7 +122,8 @@ print(isinstance(my_tesla,Car))
 print(isinstance(my_tesla , ElectricCar))   
 #my_car = Car("Tata", "Safari")
 #print(my_car.model)
-print("Exit Successfully:)"""
+print("Exit Successfully:")
+
 #Multiple Inheritance
 #Create two classes battery and engine , and let the ElectricCar class inherit from both, demonstrating
 #Multiple inheritance
