@@ -82,3 +82,4 @@ a2 = np.arange(12,24).reshape(4,3)
 #print(np.floor(a1))
 #Ceil se aage wali value aa jayegi
 #print(np.ceil(a1))
+
